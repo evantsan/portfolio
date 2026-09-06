@@ -18,5 +18,5 @@ export default defineConfig({
   // If you are deploying to a *user* site instead (a repo literally named
   // "yourusername.github.io", served at the root with no subfolder),
   // set this to "/" instead.
-  base: "/portfolio/",
+  base: "/",
 });
