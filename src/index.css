@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+::selection {
+  @apply bg-accent/20 text-ink;
+}
+
+/* Gives anchor-linked sections breathing room below the fixed navbar */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* A clearly visible focus ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid theme("colors.accent");
+  outline-offset: 3px;
+}
+
+/* Respect visitors who have asked their OS for less motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
