@@ -210,3 +210,37 @@ already exists:
 
 This is how you'd eventually add things like hackathons, awards, or a
 resume link without rewriting the rest of the site.
+
+---
+
+## 9. Deploying to Vercel
+
+This project can be deployed directly to Vercel as a static Vite site.
+
+### Option A — Deploy from the Vercel dashboard
+
+1. Push your repository to GitHub.
+2. In Vercel, click **New Project** and import `evantsan/portfolio`.
+3. In project settings, set:
+   - **Root Directory**: `portfolio`
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+4. Click **Deploy**.
+5. Open the generated `.vercel.app` URL to verify everything works.
+
+### Option B — Deploy with Vercel CLI
+
+From `/home/runner/work/portfolio/portfolio/portfolio`:
+
+```bash
+npm install
+npm run build
+npx vercel
+```
+
+For a production deployment:
+
+```bash
+npx vercel --prod
+```
