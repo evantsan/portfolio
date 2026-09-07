@@ -1,6 +1,0 @@
-<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1280" height="720" fill="#ECEAE0"/>
-  <rect x="1" y="1" width="1278" height="718" fill="none" stroke="#DBD8CC" stroke-width="2"/>
-  <text x="50%" y="46%" text-anchor="middle" font-family="monospace" font-size="26" fill="#6B6960">Add your screenshot here</text>
-  <text x="50%" y="54%" text-anchor="middle" font-family="monospace" font-size="18" fill="#2B3A8F">public/projects/project-3.svg</text>
-</svg>
